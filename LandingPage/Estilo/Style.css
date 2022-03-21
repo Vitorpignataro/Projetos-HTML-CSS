@@ -1,0 +1,226 @@
+/* Configurações Gerais */
+body{
+    margin: 0;
+    padding: 0;
+    font-size: 1.2rem;
+    background: url(../imagens/watercolor-4116932.png);
+    background-size: cover;
+}
+
+p{
+    margin: 0;
+    padding: 0;
+}
+
+
+body * {
+    box-sizing: border-box;
+}
+
+ul{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+#container{
+    width: 80vw;
+    height: 100vh;
+    margin: 0 auto;
+}
+
+/* Cabeçalho */
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo a{
+    font-family: 'artbook';
+    line-height: 10px;
+    letter-spacing: 1.5px;
+    color: #000;
+}
+
+
+/* Navegação */
+.navegation{
+    display: flex;
+}
+
+.navegation li {
+    margin-left: 20px;
+}
+
+.navegation li a{
+    padding: 10px;
+    display: block;
+    font-size: 1rem;
+    font-weight: 400;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 1px;
+}
+
+.nav-color{
+    color: #000;
+}
+
+.navegation li  a.nav-color:hover{
+    color: rgb(112, 109, 109);
+    transition: 0.3s;
+}
+
+.log-in:hover, .btn-join:hover{
+    text-decoration: underline;
+}
+
+/* Botão se inscreva */
+.sing-up{
+    border: 1px solid #000;
+    /* padding: 0 15px; */
+}
+
+.sing-up a{
+    color: #000;
+}
+
+.sing-up:hover, .sing-up a:hover{
+    background: #000;
+    color: #fff;
+    transition: 0.2s;
+}
+
+/* Sessão conteúdo */
+#conteudo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.conteudo-principal{
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+    width: 50vw;
+}
+
+.conteudo-secundario{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50vw;
+}
+
+.Titulo-principal{
+    font-family: 'Academy';
+    margin-top: 120px;
+    font-size: 70px;
+    font-weight: 800;
+    margin: 120px 0 0 0;
+    padding: 0;
+    line-height: 1px;
+}
+
+.Titulo-secundario{
+    font-family: 'university';
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.presentation{
+    font-size: 1.9rem;
+    text-align: left;
+    line-height: 20px;
+    font-family: 'school';
+    font-weight: 550;
+}
+
+.btn-join{
+    text-align: center;
+    display: block;
+    width: 30%;
+    padding: 15px;
+    margin: 10px 0;
+    color: #fff;
+    background-color: #000;
+    border-radius: 5px;
+    font-weight: 600;
+    letter-spacing: 1.8px;
+}
+
+
+.img-girl{
+    width: 90%;
+    height: 80%;
+}
+
+.nav-hamburger{
+    font-size: 35px;
+    color: #000;
+    background: none;
+    display: none;
+    border: none;
+    outline: none;
+}
+
+
+/* Responsividade */
+@media only screen and (max-width: 600px) {
+    #conteudo{
+        flex-direction: column;
+    }
+
+    .img-girl{
+        width: 100vw;
+        height: 100vh;
+        padding: 5px;
+    }
+
+    .btn-join{
+        width: 100%;
+    }
+
+    .Titulo-principal{
+        font-size: 80px;
+        line-height: normal;
+    }
+
+    .Titulo-secundario{
+        font-size: 20px;
+    }
+
+    .presentation{
+        font-size: 1.4rem;
+    }
+
+}
+
+@media only screen and (max-width: 850px) {
+    
+    .navegation li{
+        display: none;
+    }
+
+    .nav-hamburger{
+        display: block;
+    }
+    .btn-join{
+        width: 100%;
+    }
+
+}
+
+@media only screen and (max-width: 1200px) {
+    
+    .Titulo-principal{
+        font-size: 80px;
+        line-height: normal;
+    }
+}

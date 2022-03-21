@@ -1,0 +1,34 @@
+@font-face {
+    font-family: 'ethnocentric';
+    src: url(../fonts/ethnocentric\ rg\ it.otf) format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'artbook';
+    src: url(../fonts/artbook.otf) format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Academy';
+    src: url(../fonts/Academy.ttf) format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'university';
+    src: url(../fonts/University.otf) format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'school';
+    src: url(../fonts/School_Work.ttf) format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
