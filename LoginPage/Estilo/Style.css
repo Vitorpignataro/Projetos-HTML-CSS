@@ -1,0 +1,194 @@
+/* Configurações Gerais e Seletores */
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 1.2rem;
+    background-image: linear-gradient(to right, #460436 50%, #FFF 50%),
+    url(../Imagens/brickwall.png);
+}
+
+ul{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+    font-family: "HyperTurfu";
+    font-size: 1rem;
+}
+
+/* Configuração Cabeçalho e navegação*/
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 20px;
+}
+
+.logotype a{
+    font-family: "HyperTurfu";
+    line-height: 10px;
+    letter-spacing: 1.5px;
+    color: rgb(255, 255, 255);
+    font-size: 1rem;
+    text-shadow: 1px 5px 10px #180012;
+}
+
+.navegation{
+    display: flex;
+    margin: 10px;
+}
+
+.navegation li a.standard-link{
+    margin-left: 20px;
+    color: #460436;
+}
+
+.navegation li a.standard-link:hover {
+    color: #9c4586;
+    /* color: #744969; */
+    transition: 0.3s;
+}
+
+.btn-now{
+    margin-left: 20px;
+    background: #460436;
+    color: #FFF;
+    padding: 15px 20px;
+    border: 1px solid #460436;
+    border-radius: 20px;
+    
+}
+
+a.btn-now:hover{
+    text-decoration: underline;
+}
+
+/* Configuração conteúdo home-page */
+
+#home-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.home-apres{
+    width: 50vw;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: url(../Imagens/brickwall.png);
+}
+
+.home-login{
+    width: 50vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon-list{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 20px;
+}
+
+.icon-social{
+    margin: 0 10px;
+    font-size: 25px;
+    color: rgb(187, 178, 178);
+}
+
+
+.icon-social:hover{
+    color: rgb(230, 228, 228);
+}
+
+.homepage-image{
+    width: 95%;
+    height: 95%;
+    padding: 20px;
+}
+
+
+/* Sessão de Login */
+
+.login-block{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.login-title{
+    font-family: "HyperTurfu";
+    line-height: 10px;
+    letter-spacing: 1.5px;
+    font-size: 1.3rem;
+}
+
+.login-title .color-t1{
+    color: #9c4586;
+}
+
+.login-title .color-t2{
+    color: #460436;
+}
+
+.field-input{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.field-input > input{
+    width: 100%;
+    height: 40px;
+    border-radius: 20px;
+    margin: 10px 0;
+    border: none;
+    background-color: #dbdbdb;
+    text-align: center;
+    color: #180012;
+    font-size: 1.1rem;
+}
+
+.field-input > input::placeholder{
+    text-align: center;
+    font-size: 1.1rem;
+    letter-spacing: 1.5px;
+    color: #180012;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.btn-login{
+    width: 100%;
+    height: 45px;
+    margin: 10px 0;
+    background: #460436;
+    color: #FFF;
+    border: 1px solid #460436;
+    font-family: "HyperTurfu";
+    letter-spacing: 2.1px;
+    font-size: 1.3rem;
+}
+
+.btn-login:hover{
+    background: #61054a;
+}
+
+.register-link{
+    color: #460436;
+    font-size: 1.2rem;
+}
+
+.register-link:hover{
+    text-decoration: underline;
+}
