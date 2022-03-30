@@ -1,0 +1,134 @@
+/* Configurações Gerais e Seletores */
+
+body{
+    margin: 0;
+    padding: 0;
+    font-size: 1.2rem;
+    background: url(../Imagem/background-montain.jpg);
+    background-size: cover;
+}
+
+body *{
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+
+/* Container */
+.container {
+    display: flex;
+    justify-content: center;
+    margin: 40px 0;
+}
+
+/* Bloco Registro */
+.register-block{
+    width: 30vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #2c2c2e;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 10px 30px #222224;
+}
+
+.title{
+    font-family: 'lemontea';
+    letter-spacing: 1.5px;
+    color: #fff;
+}
+
+/* Formulário, Input e Social media */
+.field-input, .social-button{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-button > a{
+    width: 90%;
+    margin: 10px;
+    padding: 10px;
+    background-color: #222224;
+    text-align: center;
+    color: #fff;
+    border-radius: 20px;
+}
+
+.social-button a img{
+    float: left;
+}
+
+.social-button a:hover{
+    background-color: #fff;
+    color: #222224;
+}
+
+.field-input > input{
+    margin: 5px;
+    height: 40px;
+    padding: 10px;
+    width: 90%;
+    background-color: #222224;
+    border: 1px solid #111111;
+    color: #fff;
+}
+
+.field-input > input:hover{
+    border: 1px solid #fff
+}
+
+.email-options{
+    display: block;
+    padding-left: 15px;
+    text-indent: -15px;
+    width: 90%;
+    font-size: 0.8rem;
+    color: #5e5e5f;
+    margin: 5px;
+}
+
+.email-options > input{
+    width: 15px;
+    height: 15px;
+    padding: 0;
+    margin: 0;
+    vertical-align: bottom;
+    position: relative;
+    top: -1px;
+}
+
+input.btn-submit{
+    font-family: 'inherit';
+    background:#169e53;
+    color: #fff;
+    font-weight: 900;
+    font-size: 1.5rem;
+    height: 50px;
+}
+
+input.btn-submit:hover{
+    background: #25b666;
+    border: 1px solid #111111;
+}
+
+
+.login-redirect{
+    color: #5e5e5f;
+}
+
+.login-redirect > a{
+    color: #fff;
+}
+
+.login-redirect > a:hover{
+    text-decoration: underline;
+}
+
