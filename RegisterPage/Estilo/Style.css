@@ -132,3 +132,27 @@ input.btn-submit:hover{
     text-decoration: underline;
 }
 
+/* Responsividade */
+@media only screen and (max-width: 1300px) {
+    
+    .register-block{
+        width: 40vw;
+    }
+
+}
+
+@media only screen and (max-width: 975px) {
+    
+    .register-block{
+        width: 50vw;
+    }
+
+}
+
+@media only screen and (max-width: 785px) {
+    
+    .register-block{
+        width: 90vw;
+    }
+
+}
