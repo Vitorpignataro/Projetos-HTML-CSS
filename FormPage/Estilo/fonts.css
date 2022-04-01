@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'atmospheric';
+    src: url(../fonts/aAtmospheric.otf) format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'atmospheric-2';
+    src: url(../fonts/aAtmospheric.ttf) format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}

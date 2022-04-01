@@ -1,0 +1,257 @@
+/* Configurações Gerais e Seletores */
+body{
+    margin: 0;
+    padding: 0;
+    font-size: 1.2rem;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+fieldset{
+    border: none;
+}
+
+ul{
+    list-style-type: none;
+    padding-inline-start: 0px;
+}
+
+img{
+    width: 100%;
+    display: block;
+}
+
+.block-form > legend{
+    width: 100%;
+    background: rgb(32, 32, 32);
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+
+textarea{
+    width: 90%;
+    height: 60px;
+}
+
+
+/* Cabeçalho e navegação */
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 10px;
+    background: #000;
+    box-shadow: 0px 1px 5px #000;
+    margin-bottom: 40px;
+}
+
+
+.tittle > a{
+    color: #fff;
+    font-family: 'atmospheric';
+    line-height: 5px;
+}
+
+.tittle > a h4{
+    color: rgb(153, 153, 153);
+    font-size: 1.2rem;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.navegation{
+    display: flex;
+}
+
+.navegation > li a{
+    margin-left: 20px;
+    color: #fff;
+}
+
+.navegation > li a:hover{
+    text-decoration: underline;
+}
+
+/* Conteúdo */
+.content{
+    display: flex;
+    justify-content: center;
+}
+
+.form-subscribe{
+    width: 45vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.img-home{
+    width: 50vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-home > img{
+    width: 70%;
+}
+
+.block-form{
+    border: 1px solid #000;
+}
+
+.input-field{
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+}
+
+.input-field > div input{
+    width: 90%;
+    height: 50%;
+    display: block;
+}
+
+.input-field > div select, .input-field > div textarea{
+    display: block;
+}
+
+.input-field > div input[type="number"]{
+    width: 15%;
+    height: 40%;
+}
+
+.input-field > div label{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.2rem;
+}
+
+.input-field > div:nth-child(n + 4){
+    display: grid;
+    grid-template-columns: 2;
+    grid-gap: 10px;
+}
+
+.pers-data{
+    grid-column: 1;
+    grid-row: 3;
+}
+
+.input-field > div:nth-child(5){
+    grid-column: 1 / 2;
+    grid-row: 4;
+    grid-gap: 10px;
+}
+
+#preferences{
+    display: block;
+}
+
+.btn-submit{
+    width: 30%;
+    border: none;
+    outline: none;
+    background: #000;
+    color: #fff;
+    height: 40px;
+    margin: 10px 0;    
+}
+
+.btn-submit:hover{
+    background: rgb(22, 22, 22);
+    border: 2px solid #000;
+}
+
+
+/* Menu Responsivo */
+.navegation button.drop-menu{
+    position: relative;
+    border: none;
+    background: none;
+}
+
+.navegation button.drop-menu a{
+    color: #fff;
+    font-size: 2.1rem;
+}
+
+.drop-menu{
+    display: none;
+}
+
+.drop-hamb {
+    position: absolute; 
+    right: 0;
+    top: 100%;
+    background-color: rgb(24, 24, 24);
+    border: 1px solid #000;
+    display: none;
+    padding: 0;
+    margin: 0;
+    padding-inline-start: 0px;
+}
+
+.drop-hamb > ul li {
+    padding: 10px 20px;
+}
+
+
+.drop-menu:hover .drop-hamb{
+    display: block;
+    font-size: 1rem;
+}
+
+.drop-hamb > ul li:hover{
+    background-color: rgb(46, 46, 46);
+    transition: 0.7s;
+}
+
+
+/* Responsividade */
+@media only screen and (max-width: 785px) {
+    
+    .img-home{
+        display: none;
+    }
+
+    .form-subscribe{
+        width: 80%;
+    }
+
+}
+
+@media only screen and (max-width: 730px) {
+    
+    #preferences{
+        display: grid;
+    }
+    
+    .drop-menu{
+        display: block;
+    } 
+
+    .standard-menu{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 555px) {
+    
+    .form-subscribe{
+        width: 90%;
+    }
+
+    .input-field > div input[type="number"]{
+        width: 25%;
+        height: 40%;
+    }
+    .tittle{
+        font-size: 1rem;
+    }
+
+}

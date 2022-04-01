@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Form Page</title>
+        <link rel="stylesheet" href="Estilo/Style.css">
+        <link rel="stylesheet" href="Estilo/fonts.css">
+        <script src="https://kit.fontawesome.com/e3e7a0e17e.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div id="container"><!--Inicio do Container-->
+            <header class="header"> <!--Inicio do Header-->
+                <div class="tittle">
+                    <a href="#" >
+                        <h1>Equilibrium.</h1>
+                        <h4>NewsLetters</h4>
+                    </a>
+                </div>
+                
+                <nav>
+                    <ul class="navegation">
+                        <li class="standard-menu">
+                            <a href="#">
+                                News
+                            </a>
+                        </li>
+
+                        <li class="standard-menu">
+                            <a href="#">
+                                Product
+                            </a>
+                        </li>
+
+                        <li class="standard-menu">
+                            <a href="#">
+                                About
+                            </a>
+                        </li>
+
+                        <li class="standard-menu">
+                            <a href="#">
+                                Subscribe
+                            </a>
+                        </li>
+
+                        <button class="drop-menu">
+                            <a href="#">
+                                <i class="fa-solid fa-bars nav-hamb"></i>
+                            </a>
+
+                            <div class="drop-hamb">
+                                <ul>
+                                    <li><a href="#">News</a></li>
+                                    <li><a href="#">Product</a></li>
+                                    <li><a href="#">About</a></li>
+                                    <li><a href="#">Subscribe</a></li>
+                                </ul>
+                            </div>
+                        </button>
+                    </ul>
+                </nav>
+            </header> <!--Fim do Header-->
+
+            <section class="content">
+                <div class="form-subscribe">
+                    <form>
+                        <fieldset>
+                            <div class="block-form">
+                                <legend>
+                                    NewsLetters Equilibrium
+                                </legend>
+                                <div class="input-field">
+                                    <div>
+                                        <label for="name">Name</labe>
+                                        <input type="text" placeholder="Name" id="name" required>
+                                    </div>
+
+                                    <div>
+                                        <label for="l-name">Last Name</labe>
+                                        <input type="text" placeholder="Last name" id="l-name" required>
+                                    </div>
+
+                                    <div>
+                                        <label for="email">E-mail</label>
+                                        <input type="email" placeholder="E-mail" id="email" required>
+                                    </div>
+
+                                    <div class="pers-data">
+                                        <div>
+                                            <label for="age">Age</labe>
+                                            <input type="number" placeholder="Age" id="age">
+                                        </div>
+
+                                        <div>
+                                            <label for="sex">Sex</labe>
+                                                <select>
+                                                    <option select disabled value="">Select</option>
+                                                    <option>Male</option>
+                                                    <option>Female</option>
+                                                    <option>Prefer not to say</option>
+                                                </select>
+                                        </div>
+
+                                    </div>
+
+                                    <div>
+                                        <label for="about-user">Tell us about youself:</labe>
+                                        <textarea id="about-user">
+    
+                                        </textarea>
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <fieldset>
+                                        <label><strong>Select your favorites content:</strong></label>
+                                        <div id="preferences">
+                                                <input type="checkbox" name="hacking" id="hack-check">
+                                                <label for="hack-check">Hacking</label>
+                                                <input type="checkbox" name="frontend" id="frontend-check">
+                                                <label for="frontend-check">Front-end</label>
+                                                <input type="checkbox" name="backend" id="Back-check">
+                                                <label for="Back-check">Back-end</label>
+                                                <input type="checkbox" name="network" id="network-check">
+                                                <label for="network-check">Network</label>
+                                                <input type="checkbox" name="hardware" id="hardware-check">
+                                                <label for="hardware-check">Hardware</label>
+                                        </div>
+                                    </fieldset>
+                                </div>
+
+
+                            </div>
+                            <input type="submit" class="btn-submit" value="Subscribe">
+                            </fieldset>
+
+                    </form>
+                </div>
+                
+                <div class="img-home">
+                    <img src="imagens/Robot-girl.svg" alt="Robot-Girl">
+                </div>
+            </section>
+
+        </div><!--Fim do Container-->
+    </body>
+</html>
