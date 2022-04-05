@@ -64,16 +64,16 @@ textarea{
     font-family: 'Times New Roman', Times, serif;
 }
 
-.navegation{
+.navigation{
     display: flex;
 }
 
-.navegation > li a{
+.navigation > li a{
     margin-left: 20px;
     color: #fff;
 }
 
-.navegation > li a:hover{
+.navigation > li a:hover{
     text-decoration: underline;
 }
 
@@ -169,13 +169,13 @@ textarea{
 
 
 /* Menu Responsivo */
-.navegation button.drop-menu{
+.navigation button.drop-menu{
     position: relative;
     border: none;
     background: none;
 }
 
-.navegation button.drop-menu a{
+.navigation button.drop-menu a{
     color: #fff;
     font-size: 2.1rem;
 }

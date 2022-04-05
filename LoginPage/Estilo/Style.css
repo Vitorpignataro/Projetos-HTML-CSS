@@ -36,17 +36,17 @@ a{
     text-shadow: 1px 5px 10px #180012;
 }
 
-.navegation{
+.navigation{
     display: flex;
     margin: 10px;
 }
 
-.navegation li a.standard-link{
+.navigation li a.standard-link{
     margin-left: 20px;
     color: #460436;
 }
 
-.navegation li a.standard-link:hover {
+.navigation li a.standard-link:hover {
     color: #9c4586;
     /* color: #744969; */
     transition: 0.3s;
@@ -240,7 +240,7 @@ a.btn-now:hover{
         display: block;
     }
 
-    .navegation li{
+    .navigation li{
         display: none;
     }
     
