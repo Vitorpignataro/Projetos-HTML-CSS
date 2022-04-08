@@ -84,6 +84,7 @@ footer{
     width: 300px;
     height: 35px;
     border: 1px solid var(--black-color);
+    border-radius: 10px 5px 10px 5px;
 }
 
 .search-field > button{
@@ -92,6 +93,7 @@ footer{
     background: #304d63;
     color: var(--white-color);
     text-transform: uppercase;
+    border-radius: 10px 5px 10px 5px;
     /* font-size: 1.2rem; */
 }
 
@@ -109,7 +111,16 @@ footer{
     margin: 15px auto;
 }
 
-.navigation li a{
+.all-navigation{
+    display: flex;
+}
+
+.all-navigation > li{
+    margin-left: 10px;
+}
+
+
+.navigation li a, .aaa{
     text-transform: uppercase;
     font-size: 0.9rem;
     font-weight: 550;
@@ -181,7 +192,7 @@ footer{
     border: 2px solid rgb(112, 112, 112);
     background: var(--white-color);
     margin: 20px;
-    margin-bottom: 40px;
+    margin-bottom: -5px;
     border-radius: 20px;
     cursor: pointer;
 }
@@ -366,3 +377,67 @@ footer{
     margin-left: 20px;
 }
 
+
+
+
+/* Responsividade */
+@media only screen and (max-width: 1115px) {
+    .product-list .product-area{
+        width:40%;
+    }
+}
+
+
+
+@media only screen and (max-width: 1080px) {
+    
+    .all-navigation li > a{
+        display: none;
+    }
+
+    .product-list .product-area{
+        width:50%;
+    }
+
+}
+
+@media only screen and (max-width: 910px) {
+
+    .product-list .product-area{
+        width:80%;
+    }
+
+}
+
+@media only screen and (max-width: 650px) {
+
+    .left-content{
+        display: none;
+    }
+
+    .product-list .product-area{
+        width:90%;
+    }
+    
+    .right-content{
+        grid-column: 1 / -1;
+    }
+
+    .search-field > input{
+        width: 200px;
+    }
+
+    .search-field > button{
+        display: none;
+    }
+
+    .carousel{
+        height: 350px;
+    }
+
+    .carousel-btn{
+        margin-bottom: 200px;
+        width: 25px;
+    }
+
+}
