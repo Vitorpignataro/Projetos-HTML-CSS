@@ -159,7 +159,7 @@ footer{
 /* Carousel */
 .carousel{
     width: 80%;
-    height: 650px;
+    height: 550px;
     overflow: hidden;
     margin: 20px;
     margin: 0 auto;
@@ -168,7 +168,7 @@ footer{
 
 .carousel-navigation{
     position: absolute;
-    bottom: -20px;
+    bottom: -100px;
     left: 50%;
     transform: translate(-50%);
     display: flex;
@@ -312,7 +312,7 @@ footer{
 .product-area{
     width: 27%;
     text-align: left;
-    margin: 30px;
+    margin: 20px;
 }
 
 .product-area > p {
@@ -334,6 +334,11 @@ footer{
     padding: 7px;
     text-align: center;
 }
+
+.product-area a:hover{
+    background: var(--color-dark-blue);
+}
+
 
 .product-area > img{
     width: 100%;
@@ -357,7 +362,7 @@ footer{
 }
 
 .footer span a{
-    font-size: 1.7rem;
+    font-size: 1.5rem;
     margin-left: 20px;
 }
 
