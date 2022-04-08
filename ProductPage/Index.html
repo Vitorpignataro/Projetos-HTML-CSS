@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="Estilo/Style.css">
+        <link rel="stylesheet" href="Estilo/fonts.css">
+        <script src="https://kit.fontawesome.com/e3e7a0e17e.js" crossorigin="anonymous"></script>
+        <title>Product Page</title>
+    </head>
+    <body>
+        
+    <div id="container"><!--Start Container-->
+
+        <header class="header"><!--Start Header-->
+            <div class="header-top">
+                <div class="title">
+                    <a href="#">
+                        <h1>Nature</h1>
+                        <h3>travel</h3>
+                    </a>
+                </div>
+                <div>
+                    <form>
+                        <span  class="search-field">
+                            <input type="search" placeholder="Search" id="search">
+                            <button type="submit">Search</button>
+                        </span>
+                   </form>
+                    
+                </div>
+                
+            </div>
+            
+            <div class="main-navigation"> <!--Start Main-Navigation-->
+                <nav>
+                    <ul class="navigation"><!--Start Navigation-->
+                        <li class="navigation-extend">
+                            <a href="#">Departments</a>
+                            <div class="sub-navigation"><!--Start sub-Navigation-->
+                                <ul>
+                                    <li>
+                                        <a href="#">National Travels</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">International Travels</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Travel packages</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Rent car</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Tours</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Vip acess</a>
+                                    </li>
+                                </ul>
+                            </div><!--End sub-Navigation-->
+                        </li>
+
+                        <li>
+                            <a href="#">Promotions</a>
+                        </li>
+                        <li>
+                            <a href="">Packages</a>
+                        </li>
+                        <li>
+                            <a href="#">Tickets</a>
+                        </li>
+                        <li>
+                            <a href="#">Accommodation</a>
+                        </li>
+                    </ul> <!--End Navigation-->
+                </nav>
+            </div><!--End Main-Navigation-->
+        </header><!--End Header-->
+
+
+        <div class="carousel"><!--Start Carousel-->
+            <div class="slides">
+                
+                <input type="radio" name="slide" id="carousel-1" checked>
+                <input type="radio" name="slide" id="carousel-2">
+                <input type="radio" name="slide" id="carousel-3">
+                <input type="radio" name="slide" id="carousel-4">
+                <input type="radio" name="slide" id="carousel-5">
+
+
+                <div class="slide s1">
+                    <img src="imagens/image-netherlands.jpg" alt="Netherlands">
+                </div>
+
+                <div class="slide">
+                    <img src="imagens/camels-image.jpg" alt="Egypt">
+                </div>
+
+                <div class="slide">
+                    <img src="imagens/image-japan.jpg" alt="Japan">
+                </div>
+
+                <div class="slide">
+                    <img src="imagens/image-fisherman.jpg" alt="Fisherman">
+                </div>
+
+                
+                <div class="slide slide-1">
+                    <img src="imagens/image-sakura.jpg" alt="Sakura">
+                </div>
+
+                <div class="carousel-navigation">
+                   <label class="carousel-btn" for="carousel-1"></label>
+                   <label class="carousel-btn" for="carousel-2"></label>
+                   <label class="carousel-btn" for="carousel-3"></label>
+                   <label class="carousel-btn" for="carousel-4"></label>
+                   <label class="carousel-btn" for="carousel-5"></label>
+                </div>
+
+            </div>
+        </div><!--end Carousel-->
+
+        <section id="content"><!--Start Contents-->
+            <div class="title-content">
+                <h2>Travels</h2>
+            </div>
+            <aside class="left-content"><!--Start Left Content-->
+                <h2>Preferences</h2>
+                <div class="filter">
+                    <form>
+                        <div class="filter-box">
+                            <h3>Travel:</h3>
+                            
+                            <label><input type="checkbox" name="international" id="international-travel">International</label>
+                            
+                            <label><input type="checkbox" name="national" id="national-travel">National</label>
+                        </div>
+
+                        <div class="filter-box">
+                            <h3>Amount:</h3>
+                                
+                                <label><input type="checkbox" name="amount" id="amount-1">$1000 - $2500</label>
+                                
+                                <label><input type="checkbox" name="amount" id="amount-2">$2500 - $3500</label>
+                                
+                                <label><input type="checkbox" name="amount" id="amount-3">$3500 - $5000</label>
+                                
+                                <label><input type="checkbox" name="amount" id="amount-3">$5000+</label>
+                        </div>
+                        
+                        <div class="filter-box">
+                            <h3>Upgrades:</h3>
+                            
+                            <label for="tickets-travel"><input type="checkbox" name="tickets" id="tickets-travel">Tickets</label>
+                            
+                            <label for="car-travel"><input type="checkbox" name="car" id="car-travel">Car</label>
+                            
+                            <label for="accommodation-travel"><input type="checkbox" name="accommodation" id="accommodation-travel">Accommodation</label>
+                            
+                            <label for="tours-travel"><input type="checkbox" name="tours" id="tours-travel">Tours</label>
+
+                            <label for="baggage-travel"><input type="checkbox" name="baggage" id="baggage-travel">Extra Baggage</label>
+                        </div>
+
+                        <div class="filter-box">
+                            <h3>Your Travel:</h3>
+                            <label for="number-adults"><input type="number" name="adults" id="number-adults"> Adults</label>
+                            <label for="number-kids"><input type="number" name="kids" id="number-kids"> Kids</label>
+                            <label for="data-depar"><input type="date" name="" id="data-depar"> Departure</label>
+                            <label for="data-return"><input type="date" name="" id="data-return"> Return</label>
+                        </div>
+
+                        <input type="submit" class="btn-form-submit" value="Filter">
+                    </form>
+                </div>
+            </aside><!--End Left Content-->
+
+            <div class="right-content">
+                <div class="product-list">
+                    <div class="product-area">
+                        <img src="imagens/image-japan.jpg" alt="cancun" width="235px" height="235px">
+                        <p>Travel to Cancun and enjoy your time like you want</p>
+                        <p><strong>$1.300,99</strong></p>
+                        <a class="btn-buy" href="#">Buy Now</a>
+                    </div>
+                    <div class="product-area">
+                        <img src="imagens/image-japan.jpg" alt="cancun" width="235px" height="235px">
+                        <p>Travel to Cancun and enjoy your time like you want</p>
+                        <p><strong>$1.300,99</strong></p>
+                        <a class="btn-buy" href="#">Buy Now</a>
+                    </div>
+                    <div class="product-area">
+                        <img src="imagens/image-japan.jpg" alt="cancun" width="235px" height="235px">
+                        <p>Travel to Cancun and enjoy your time like you want</p>
+                        <p><strong>$1.300,99</strong></p>
+                        <a class="btn-buy" href="#">Buy Now</a>
+                    </div>
+                    <div class="product-area">
+                        <img src="imagens/image-japan.jpg" alt="cancun" width="235px" height="235px">
+                        <p>Travel to Cancun and enjoy your time like you want</p>
+                        <p><strong>$1.300,99</strong></p>
+                        <a class="btn-buy" href="#">Buy Now</a>
+                    </div>
+                    <div class="product-area">
+                        <img src="imagens/image-japan.jpg" alt="cancun" width="235px" height="235px">
+                        <p>Travel to Cancun and enjoy your time like you want</p>
+                        <p><strong>$1.300,99</strong></p>
+                        <a class="btn-buy" href="#">Buy Now</a>
+                    </div>
+                    <div class="product-area">
+                        <img src="imagens/image-japan.jpg" alt="cancun" width="235px" height="235px">
+                        <p>Travel to Cancun and enjoy your time like you want</p>
+                        <p><strong>$1.300,99</strong></p>
+                        <a class="btn-buy" href="#">Buy Now</a>
+                    </div>
+                    <div class="product-area">
+                        <img src="imagens/image-japan.jpg" alt="cancun" width="235px" height="235px">
+                        <p>Travel to Cancun and enjoy your time like you want</p>
+                        <p><strong>$1.300,99</strong></p>
+                        <a class="btn-buy" href="#">Buy Now</a>
+                    </div>
+                    <div class="product-area">
+                        <img src="imagens/image-japan.jpg" alt="cancun" width="235px" height="235px">
+                        <p>Travel to Cancun and enjoy your time like you want</p>
+                        <p><strong>$1.300,99</strong></p>
+                        <a class="btn-buy" href="#">Buy Now</a>
+                    </div>
+                    <div class="product-area">
+                        <img src="imagens/image-japan.jpg" alt="cancun" width="235px" height="235px">
+                        <p>Travel to Cancun and enjoy your time like you want</p>
+                        <p><strong>$1.300,99</strong></p>
+                        <a class="btn-buy" href="#">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+
+
+        </section><!--End Contents-->
+
+
+        <footer>
+            <div class="footer">
+                <span>
+                    &copy; Todos os Direitos Reservados - 2022
+                </span>
+                <span>
+                    <a href="#">
+                        <i class="fa-brands fa-facebook-square"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fa-brands fa-youtube"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fa-brands fa-twitter"></i>
+                    </a>
+                </span>
+            </div>
+        </footer>
+
+
+    </div><!--End Container-->
+
+    </body>
+</html>
