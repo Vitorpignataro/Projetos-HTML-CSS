@@ -1,0 +1,7 @@
+.conteudo{
+    width: 300px; 
+    height: 500px;
+    text-align:left;
+    background-image: url(../Imagem/background-montain.jpg);
+    background-size: cover;
+}
