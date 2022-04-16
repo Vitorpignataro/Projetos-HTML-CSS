@@ -132,7 +132,7 @@ Tamanho textos
     justify-content: space-between;
 }
 
-#center-news .sections-titles span{
+#center-news .sections-titles span, #weekly-news .sections-titles span{
     font-size: 1.375rem;
     color: #4a4a4a;
     margin: 10px 0;
@@ -198,6 +198,18 @@ Tamanho textos
 }
 .aside-cards .news-card > img{
     width: 97%;
+}
+
+.aside-cards .content-card > h2{
+    font-size: 1.275rem;
+}
+
+/* Weekly News */
+
+#weekly-news{
+    width: 95%;
+    margin: 0 auto;
+    margin-top: 5%;
 }
 
 /* @font-face {
