@@ -179,13 +179,13 @@ Tamanho textos
 
 .content-card > a, .simple-card-news > a{
     border-left: 1px solid red;
-    font-size: .875rem;;
+    font-size: .875rem;
     color: var(--color-links);
     text-transform: uppercase;
     padding: 0 5px;
 }
 
-.content-card > a:hover, .simple-card-news > a:hover{
+.content-card > a:hover, .simple-card-news > a:hover, .banner-section .sections-titles > a:hover{
     text-decoration: underline;
 }
 
@@ -244,7 +244,7 @@ Tamanho textos
     border-left: 1px solid rgb(86, 15, 167);
 }
 
-.aside-cards .news-card > img:hover, .simple-card-news > img:hover, .news-card > img:hover{
+.aside-cards .news-card > img:hover, .simple-card-news > img:hover, .news-card > img:hover, .banner-card > img:hover{
     opacity: 0.95;
 }
 
@@ -258,6 +258,44 @@ Tamanho textos
 
 
 .banner-section > .sections-titles{
+    display: flex;
+    align-items: center;
     font-size: 36px;
     color: var(--color-white);
+}
+
+.banner-section .sections-titles > a{
+    font-size: .875rem;
+    margin: 0 10px;
+    color: var(--color-links);
+    padding: 10px;
+    border-radius: 20px;
+    border: 1px solid var(--color-white);
+}
+
+#banner-content{
+    display: flex;
+    justify-content: space-between;
+
+    /* margin: 20px; */
+}
+
+.banner-card{
+    margin:  15px 0;
+    background-color: var(--color-white);
+    cursor: pointer;
+}
+
+
+.banner-card > img{
+    width: 400px;
+    height: 250px;
+}
+
+.banner-card > p {
+    margin: 10px;
+    font-size: 1.375rem;
+    font-weight: bold;
+    color: var(--color-subtitles-black);
+    line-height: 1.2;
 }
