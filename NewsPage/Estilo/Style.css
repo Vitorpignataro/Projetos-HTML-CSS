@@ -134,7 +134,7 @@ Tamanho textos
     margin: 10px 0;
 }
 
-#center-news .sections-titles span, #weekly-news .sections-titles span{
+#center-news .sections-titles span, #weekly-news .sections-titles span, #tv-news > .sections-titles{
     font-size: 1.375rem;
     color: #4a4a4a;
     font-weight: bold;
@@ -208,7 +208,7 @@ Tamanho textos
 
 /* Weekly News */
 
-#weekly-news, .banner-section{
+#weekly-news, .banner-section, #tv-news{
     width: 95%;
     margin: 0 auto;
     margin-top: 5%;
@@ -299,3 +299,28 @@ Tamanho textos
     color: var(--color-subtitles-black);
     line-height: 1.2;
 }
+
+
+
+/* TV news content */
+.tv-news-content{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.tv-news-content > aside {
+    grid-column: 1;
+}
+
+.tv-news-content > .card-list-section{
+ grid-column: 2 / -1;
+}
+
+
+
+
+
+
+
+
+
