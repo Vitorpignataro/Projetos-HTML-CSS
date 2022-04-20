@@ -185,7 +185,7 @@ Tamanho textos
     padding: 0 5px;
 }
 
-.content-card > a:hover, .simple-card-news > a:hover, .banner-section .sections-titles > a:hover{
+.content-card > a:hover, .simple-card-news > a:hover, .banner-section .sections-titles > a:hover, .footer-info span a:hover{
     text-decoration: underline;
 }
 
@@ -367,7 +367,30 @@ Tamanho textos
     font-size: 1.275rem;
 }
 
+/* Footer */
 
+#footer{
+    padding: 10px;
+    /* width: 95%; */
+    margin: 0 auto;
+    margin-top: 5%;
+    background-color: var(--color-subtitles-black);
+}
+
+#footer .main-navigation, .footer-info{
+    display: flex;
+    justify-content: center;
+
+}
+#footer .main-navigation li{
+    border: none;
+}
+
+.footer-info span a{
+    font-size: 0.875rem;
+    color: var(--color-links);
+    margin: 20px;
+}
 
 
 
