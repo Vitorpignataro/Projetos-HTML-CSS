@@ -312,7 +312,7 @@ Tamanho textos
     grid-column: 1;
     background: #212121;
     border: 1px solid var(--color-black);
-    height: 600px;
+    height: 590px;
 }
 
 
@@ -320,8 +320,6 @@ Tamanho textos
     grid-column: 2 / -1;
     margin: 0 20px;
 }
-
-
 
 .tv-news-list {
     text-align: center;
@@ -332,12 +330,10 @@ Tamanho textos
 .tv-news-list li{
     padding: 35px 0;
     width: 100%;
-    /* border-bottom: 1px solid var(--bg-white-links); */
 }
 
 .tv-news-list li:hover{
-    background: #000;
-    /* border-bottom: 1px solid var(--bg-white-links); */
+    background: var(--bg-white-text);
 }
 
 .tv-news-list li a{
@@ -348,7 +344,6 @@ Tamanho textos
 .tv-news-list li a:hover{
     color: var(--color-white);
 }
-
 
 .card-list-section > .lower-cards{
     margin-top: 10px;
