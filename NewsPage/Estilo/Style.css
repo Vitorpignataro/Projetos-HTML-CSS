@@ -319,6 +319,7 @@ Tamanho textos
 .tv-news-content > .card-list-section{
     grid-column: 2 / -1;
     margin: 0 20px;
+    cursor: pointer;
 }
 
 .tv-news-list {
@@ -349,6 +350,7 @@ Tamanho textos
     margin-top: 10px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    cursor: pointer;
 }
 
 .lower-cards > .simple-card-news, .card-list-section .news-card{
@@ -375,6 +377,7 @@ Tamanho textos
     margin: 0 auto;
     margin-top: 5%;
     background-color: var(--color-subtitles-black);
+    box-shadow: 0 0 20px var(--color-black);
 }
 
 #footer .main-navigation, .footer-info{
@@ -393,6 +396,93 @@ Tamanho textos
 }
 
 
+.card-list-section .content-card > a, .card-list-section .simple-card-news > a{
+    border-left: 1px solid blue;
+}
+
+/* Responsividade */
+@media only screen and (max-width: 1040px) {
+    .header{
+        justify-content: space-between;
+    }
+
+    .main-navigation{
+        display: none;
+    }
+
+    .sub-navigation-header{
+        display: block;
+        margin-right: 30px;
+    }
+
+    .lower-cards .simple-card-news img{
+        width: 100%;
+        height: 50%;
+    }
+
+    .banner{
+        overflow: scroll;
+        white-space: nowrap;
+    }
+
+    #banner-content{
+        /* display: inline-block; */
+        overflow-x: scroll;
+        overflow-y: hidden;
+    }
+
+}
+
+@media only screen and (max-width: 925px) {
+    
+    .center-news-cards{
+        display: block;
+        align-items: center;
+        cursor: pointer;
+    }
+
+    #footer > .main-navigation{
+        flex-wrap: wrap;
+    }
+
+    #footer > .main-navigation li a{
+        line-height: 30px;
+    }
+
+}
+
+
+@media only screen and (max-width: 650px) {
+    
+    #weekly-news-cards{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        cursor: pointer;
+    }
+
+    .tv-news-content aside{
+        display: none;
+    }
+
+    .tv-news-content > .card-list-section{
+        grid-column: 1 / -1;
+        margin: 0px;
+        cursor: pointer;
+    }
+
+    .lower-cards > .simple-card-news, .card-list-section .news-card {
+        padding: 0px;
+    }
+
+    .tv-news-content{
+        width: 100%
+    }
+
+    .simple-card-news > img{
+        height: 170px;
+    }
+
+}
 
 
 
