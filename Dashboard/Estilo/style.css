@@ -1,0 +1,119 @@
+/* Selectors and Configs */
+html, body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style-type: none;
+    padding-inline-start: 0px;
+}
+
+h1{
+    padding: 0;
+    margin: 0;
+}
+
+
+/* Variaveis */
+:root{
+    --bg-main: #212121;
+    
+    /* Colors */
+    --color-white: #fff;
+    --color-black: #000;
+    --font-white: #f1f1f1;
+}
+
+
+/* Dashboard */
+#dashboard{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+
+/* Side bar */
+.side-bar{
+    grid-column: 1;
+    background: var(--bg-main);
+    box-shadow: 2px 0px 6px #555555;
+    height: 100vh;
+    padding-top: 20px;
+    position: static;
+    width: 275px;
+}
+
+.side-bar > .title{
+    text-align: center;
+    padding: 5px;
+}
+
+.side-bar > div > h1{
+    color: var(--color-white);
+    font-size: 2.25rem;
+    line-height: 25px;
+}
+
+.icon-paw{
+    margin-left:3px;
+    color: 	#0a5555;
+    transform: rotate(-20deg);
+}
+
+.icon-paw:hover{
+    transition: 1.5s;
+    transform: rotate(340deg);
+}
+
+/* Navigation aside */
+.navigation{
+    margin: 50px 0;
+}
+
+.navigation{
+    position: relative;
+}
+
+.navigation-list li{
+    position: relative;
+    cursor: pointer;
+}
+
+.navigation-list li a{
+    text-align: left;
+    color: var(--font-white);
+    font-size: 1.125rem;
+    line-height: 45px;
+    cursor: pointer;
+    display: block;
+    padding: 5px 20px;
+    background-image: linear-gradient(to right, #0a5555 50%, transparent 50%);
+    background-size: 200%;
+    background-position: 100%;
+    transition: 0.4s;
+}
+
+.navigation-list li a:hover{
+    background-position: 0%;
+}
+
+.navigation-list li a .dropdown{
+    position: absolute;
+    right: 0;
+    margin: 12.5px;
+    margin-right: 10px;
+}
+
+
+/* Content */
+.content{
+    grid-column: 2 / -1;
+}
