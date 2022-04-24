@@ -199,16 +199,21 @@ h1{
     border-left: 1px solid #555555;
     border-bottom: 1px solid #555555;
     height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+
 }
 
 .graph1, .graph2, .graph3{
     border: 1px solid var(--bg-main);
     width: 20px;
     animation: graph ease-in-out 3s;
+    margin-bottom: 0px;
+    
 }
 
 .graph1{
-
     background: #0a5555;
     height: 183px;
 }
