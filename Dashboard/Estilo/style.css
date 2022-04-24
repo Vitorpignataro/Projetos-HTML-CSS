@@ -131,17 +131,42 @@ h1{
 /* Content */
 .content{
     grid-column: 2 / -1;
-    background-color: #ccc;
+    background-color: #f0eee4;
     padding: 20px;
 }
 
 
-.card-item{
-    width: 300px;
-    height: 300px;    
-    background-color: #fff;
-    padding: 20px;
+.cards{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
 }
+
+.card-item-1, .card-item-2, .card-item-3, .card-item-4{
+    width:80%;
+    height: 250px;    
+    background-color: var(--font-white);
+    padding: 20px;
+    margin: 10px 0;
+    text-align: center;
+    box-shadow: 0px 0px 5px var(--bg-main);
+    border-radius: 2px;
+}
+
+
+.card-item-1 > h3, .card-item-2 > h3, .card-item-3 > h3, .card-item-4 > h3,
+.card-item-1 > p, .card-item-2 > p, .card-item-3 > p, .card-item-4 > p{
+    color: var(--bg-main);
+}
+
+.card-item-1 > p, .card-item-2 > p, .card-item-3 > p, .card-item-4 > p{
+    font-size: 0.875rem;
+}
+
+.card-item-1 p span, .card-item-2 p span, .card-item-3 p span, .card-item-4 p span{
+    font-weight: bold;
+    text-decoration: underline;
+}
+
 
 
 .card-progress{
@@ -177,15 +202,38 @@ h1{
 }
 
 
-.mask .fill{
+.card-item-1 .card-progress .card-progress-2 .mask .fill,
+.card-item-2 .card-progress .card-progress-2 .mask .fill,
+.card-item-3 .card-progress .card-progress-2 .mask .fill{
     clip: rect(0px, 75px, 150px, 0px);
+}
+
+.card-item-1 .card-progress .card-progress-2 .mask .fill{
     background-color: #0a5555;
+}
+
+.card-item-2 .card-progress .card-progress-2 .mask .fill{
+    background-color: #440d5f;
+}
+
+.card-item-3 .card-progress .card-progress-2 .mask .fill{
+    background-color: #041d3f;
 }
 
 .mask.full,
 .card-progress-2 .fill{
     animation: fill ease-in-out 3s;
     transform: rotate(150deg);
+}
+
+.card-item-2 .card-progress .card-progress-2 .mask.full,
+.card-item-2 .card-progress .card-progress-2 .fill{
+    transform: rotate(120deg);
+}
+
+.card-item-3 .card-progress .card-progress-2 .mask.full,
+.card-item-3 .card-progress .card-progress-2 .fill{
+    transform: rotate(74deg);
 }
 
 @keyframes fill{
