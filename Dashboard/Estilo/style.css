@@ -136,6 +136,7 @@ h1{
 }
 
 
+/* Cards */
 .cards{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -167,8 +168,82 @@ h1{
     text-decoration: underline;
 }
 
+.card-item-4{
+    width: 93.5%;
+}
+
+.cards > div:nth-child(n + 4){
+    grid-column: 1 / -1;
+}
 
 
+/* Graph */
+.graph{
+    height: 100%;
+    display: flex;
+}
+
+.graph-info li span{
+    line-height: 30px;
+}
+
+.graph-style{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.graph-draw{
+    margin-left: 20px;
+    width: 450px;
+    border-left: 1px solid #555555;
+    border-bottom: 1px solid #555555;
+    height: 80%;
+}
+
+.graph1, .graph2, .graph3{
+    border: 1px solid var(--bg-main);
+    width: 20px;
+    animation: graph ease-in-out 3s;
+}
+
+.graph1{
+
+    background: #0a5555;
+    height: 183px;
+}
+
+.graph2{
+    background: #440d5f;
+    height: 143px;
+    margin-top: 40px;
+}
+
+.graph3{
+    background:#041d3f;
+    height: 76px;
+    margin-top: 106px;
+}
+
+
+
+.graph-info-2 > ul, .graph-draw ul{
+    display: flex;
+    margin-left: 40px;
+}
+
+.graph-info-2 li span{
+    margin-left: 20px;
+}
+
+.graph-draw ul div{
+    margin-right: 25px;
+    display: flex;
+    
+}
+
+
+/* Cards System */
 .card-progress{
     margin:auto;
     width: 150px;
@@ -204,7 +279,8 @@ h1{
 
 .card-item-1 .card-progress .card-progress-2 .mask .fill,
 .card-item-2 .card-progress .card-progress-2 .mask .fill,
-.card-item-3 .card-progress .card-progress-2 .mask .fill{
+.card-item-3 .card-progress .card-progress-2 .mask .fill,
+.card-item-4 .card-progress .card-progress-2 .mask .fill{
     clip: rect(0px, 75px, 150px, 0px);
 }
 
@@ -218,6 +294,14 @@ h1{
 
 .card-item-3 .card-progress .card-progress-2 .mask .fill{
     background-color: #041d3f;
+}
+
+.card-item-4 .card-progress .card-progress-2 .mask .fill{
+    background-color: #055805;
+}
+
+.anual-card{
+    margin-left: 15%;
 }
 
 .mask.full,
@@ -236,11 +320,29 @@ h1{
     transform: rotate(74deg);
 }
 
+.card-item-4 .card-progress .card-progress-2 .mask.full,
+.card-item-4 .card-progress .card-progress-2 .fill{
+    transform: rotate(170deg);
+}
+
+
+
+/* keyframes */
 @keyframes fill{
 
     0%{
         transform: rotate(0deg);
     }
 }
+
+@keyframes graph{
+
+    0%{
+        height: 0px;
+    }
+}
+
+
+
 
 
